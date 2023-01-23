@@ -1,0 +1,89 @@
+@import './kit/variables';
+
+@media only screen and (max-width: $mobile) {
+  .footer-info {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 160px;
+    padding: 40px 0px 60px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $grey-color;
+
+    &__details {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0 20px;
+      &__contacts {
+        padding: 10px;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+
+        &__logo {
+          align-self: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 5px;
+
+          &__logo-img {
+            width: 20px;
+            height: 20px;
+          }
+          &__logo-text {
+            font-family: Source Sans Pro;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 16px;
+            color: $white-color;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+          }
+        }
+        &__details {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          &__detail {
+            font-family: Source Sans Pro;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: rgba(255, 255, 255, 0.4);
+
+            &--email {
+              margin-top: 10px;
+
+              a {
+                text-decoration: none;
+                color: rgba(255, 255, 255, 0.4);
+              }
+            }
+          }
+        }
+      }
+      &__rights {
+        margin-top: 10px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: rgba(255, 255, 255, 0.4);
+      }
+    }
+  }
+}

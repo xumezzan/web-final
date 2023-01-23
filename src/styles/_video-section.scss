@@ -1,0 +1,39 @@
+.video__section {
+  background-image: linear-gradient(
+      rgba(140, 79, 42, 0.3),
+      rgba(140, 79, 42, 0.3)
+    ),
+    url("./../assets/video-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding: 80px 0 86px;
+  &-heading {
+    @include section-heading(63px, $white-color);
+  }
+
+  &-btn {
+    // padding: 50px 41px 44px 56px;
+    padding: 48px 44px 51px 56px;
+    width: 145px;
+    height: 140.47px;
+    border-radius: 50%;
+    background-color: $paly-btn-color;
+    border: none;
+    font-size: 15px;
+    color: $white-color;
+    margin-bottom: 54px;
+  }
+
+  &-symble {
+    display: inline-block;
+    width: 19px;
+    height: 8px;
+    margin-top: -20px;
+    transform: scale(6, 7);
+  }
+
+  &-text {
+    @include section-text(0, $white-color);
+  }
+} 

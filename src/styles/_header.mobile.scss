@@ -1,0 +1,94 @@
+@media only screen and (max-width: $mobile) {
+  .header {
+    padding: 41px 20px 241px;
+    &__line {
+      margin-bottom: 201px;
+      display: block;
+    }
+
+    &__section {
+      text-align: center;
+
+      &-logo {
+        margin-bottom: 13px;
+      }
+
+      &-heading {
+        margin-bottom: 41px;
+      }
+    }
+  }
+
+  .navbar {
+    position: absolute;
+    left: 10%;
+    width: 100%;
+    margin: 21px 0;
+    visibility: hidden;
+
+    &__list {
+      list-style-type: none;
+      display: block;
+      padding: 40px;
+      // margin-left: 140px;
+      text-align: center;
+    }
+
+    &__item {
+      // margin-left: 140px;
+      margin: 0 85%;
+      text-align: center;
+      padding: 10px 0;
+      &:not(:first-child) {
+        padding-left: 0;
+      }
+    }
+  }
+}
+//   #header {
+//     &__checkbox {
+//       display: none;
+//       &:checked ~ #header__burger::before {
+//         transform: rotate(45deg);
+//         top: 50%;
+//       }
+
+//       &:checked ~ #header__burger::after {
+//         transform: rotate(-45deg);
+//         bottom: 50%;
+//       }
+
+//       &:checked ~ #header__burger span {
+//         visibility: hidden;
+//       }
+
+//       &:checked ~ .navbar {
+//         visibility: visible;
+//       }
+//     }
+
+//     &__burger {
+//       width: 25px;
+//       height: 16px;
+//       position: absolute;
+//       right: 0;
+//       top: 0;
+
+//       &::after,
+//       &::before {
+//         content: "";
+//         @include hamburger-line;
+//         bottom: 0.1px;
+//       }
+
+//       &::before {
+//         top: 0.1px;
+//       }
+//     }
+
+//     &__burger span {
+//       @include hamburger-line;
+//       top: 41%;
+//     }
+//   }
+// }

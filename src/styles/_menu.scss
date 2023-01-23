@@ -1,0 +1,42 @@
+.navbar {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    display: block;
+  
+    &__list {
+      list-style-type: none;
+      display: flex;
+    }
+  
+    &__item {
+      list-style-type: none;
+      font-family: "Source Sans Pro";
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.2em;
+      &:not(:first-child) {
+        padding-left: 32px;
+      }
+    }
+  
+    &__link {
+      text-decoration: none;
+      color: $white-color;
+      white-space: nowrap;
+      padding: 6px 0;
+      transition: all 0.3s linear;
+    }
+  
+    &__link:hover {
+      border-bottom: 2px solid $white-color;
+      outline: white;
+    }
+
+    #header__checkbox {
+        display: none;
+      }
+      
+  }
+  

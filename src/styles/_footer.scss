@@ -1,0 +1,91 @@
+@import './kit/variables';
+
+@media screen and (min-width: 1200px) {
+  .footer-info {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 160px;
+    padding: 40px 0px 60px 0px;
+    display: flex;
+    background-color: $grey-color;
+    justify-content: center;
+
+    &__details {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 20px;
+      width: calc(
+        calc(120px + (300 - 120) * ((100vw - 480px) / (1600 - 480))) * 2 +
+          (400px)
+      );
+      &__contacts {
+        padding: 10px;
+        flex: 1;
+        align-items: flex-start;
+        justify-self: flex-start;
+        display: flex;
+        // gap: 20px;
+        gap: 60px;
+
+        &__logo {
+          align-self: flex-start;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 5px;
+
+          &__logo-img {
+            width: 20px;
+            height: 20px;
+          }
+          &__logo-text {
+            font-family: Source Sans Pro;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 16px;
+            color: $white-color;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+          }
+        }
+        &__details {
+          display: flex;
+          flex-direction: column;
+
+          &__detail {
+            font-family: Source Sans Pro;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: rgba(255, 255, 255, 0.4);
+
+            &--email {
+              margin-top: 20px;
+
+              a {
+                text-decoration: none;
+                color: rgba(255, 255, 255, 0.4);
+              }
+            }
+          }
+        }
+      }
+      &__rights {
+        align-self: flex-end;
+        align-items: flex-end;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: rgba(255, 255, 255, 0.4);
+      }
+    }
+  }
+}

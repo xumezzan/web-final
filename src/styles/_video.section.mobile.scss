@@ -1,0 +1,25 @@
+@media only screen and (max-width: $mobile) {
+  .video__section {
+    padding: 71px 0 73px;
+    &-heading {
+      @include section-heading(91px, $white-color);
+      font-size: 38px;
+    }
+
+    &-btn {
+      width: 75px;
+      height: 115px;
+      // padding: 39px 65px 51px 56px;
+      padding: 48px 66px 51px 56px;
+
+      margin-bottom: 82px;
+    }
+    &-symble {
+      // width: 36px;
+      // height: 46px;
+      // margin-top: 40px;
+      margin-left: -2px;
+      transform: scale(5, 5);
+    }
+  }
+}

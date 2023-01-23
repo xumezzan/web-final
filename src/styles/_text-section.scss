@@ -1,0 +1,72 @@
+.text__section {
+  padding: 66px 143px 98px 152px;
+
+  &-heading {
+    @include section-heading(39px, $grey-color);
+  }
+
+  &-text {
+    @include section-text(45px, $lightgrey-color);
+  }
+
+  &-info-wrapper {
+    display: flex;
+    margin-bottom: 46px;
+    justify-content: space-between;
+  }
+  &-info {
+    @include box-text($lightgrey-color);
+    width: 408px;
+  }
+
+  &-btn {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: $white-color;
+    background: $blue-color;
+    border: none;
+    padding: 5px 22px;
+    border-radius: 18px;
+    display: block;
+    margin: 0 auto;
+    &:hover{
+      background-color: $white-color;
+      color: $blue-color;
+      border: 1px solid $blue-color; 
+  }
+
+
+    // background: $blue-color;
+
+
+    //   border: none;
+    //   cursor: pointer;
+    //   color: white;
+    //   font-family: 'Oswald';
+    //   font-weight: 300;
+    //   font-size: 16px;
+    //   line-height: 26px;
+    //   text-transform: uppercase;
+    //   text-align: center;
+    //   letter-spacing: 0.1em;
+    //   border-radius: 18px;
+    //   padding: 5px 15px;
+    //   margin: auto;
+    //   display: inline;
+      
+    //   position: absolute;
+    //   right: 0%;
+    //   left: 0%;
+    //   bottom: 0%;
+    //   top: 0%;
+    //   font-style: normal;
+
+    //     border-radius: 18px;
+    //     background: #55C2D8;
+  }
+}
